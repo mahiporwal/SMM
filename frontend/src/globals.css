@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 font-sans;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    @apply opacity-0 transform -translate-y-2;
+  }
+  to {
+    @apply opacity-100 transform translate-y-0;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
